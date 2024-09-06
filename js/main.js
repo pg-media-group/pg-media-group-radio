@@ -332,11 +332,11 @@
                 const lyrics = data.mus[0].text;
                 return lyrics;
             } else {
-                return "Letra no disponible";
+                return "no lyrics or lyrics error";
             }
         } catch (error) {
             console.error("Error fetching lyrics:", error);
-            return "Letra no disponible";
+            return "no lyrics or lyrics error";
         }
     };
 
