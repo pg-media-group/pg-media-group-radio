@@ -1,15 +1,15 @@
 {
-  "name": "Jailson Webradio",
-  "short_name": "Jailson Webradio",
-  "description": "Música sem Gospel sem parar!",
+  "name": "pg medua group radio",
+  "short_name": "pg radio",
+  "description": "radio by pg",
   "icons": [
     {
-      "src": "assets/jailson_cover.png",
+      "src": "P_20240804_231138_0000 (1).png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "assets/jailson_cover.png",
+      "src": "P_20240804_231138_0000 (1).png",
       "type": "image/png",
       "sizes": "512x512"
     }
@@ -29,19 +29,19 @@
   ],
   "screenshots": [
     {
-      "src": "assets/jailson_cover.png",
+      "src": "P_20240804_231138_0000 (1).png",
       "type": "image/png",
       "sizes": "540x720",
       "form_factor": "narrow"
     },
     {
-      "src": "assets/jailson_cover.png",
+      "src": "P_20240804_231138_0000 (1).png",
       "type": "image/png",
       "sizes": "540x720",
       "form_factor": "narrow"
     },
     {
-      "src": "assets/jailson.png",
+      "src": "P_20240804_231138_0000 (1).png",
       "type": "image/png",
       "sizes": "720x540",
       "form_factor": "wide"
@@ -50,8 +50,8 @@
   "related_applications": [
     {
       "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.jbcast.jwradio",
-      "id": "com.jbcast.jwradio"
+      "url": "",
+      "id": ""
     }
   ]
 }
