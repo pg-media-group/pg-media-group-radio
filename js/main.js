@@ -925,3 +925,37 @@ window.addEventListener("beforeinstallprompt", (event) => {
   installPrompt = event;
   installButton.removeAttribute("hidden");
 });
+
+installButton.addEventListener("click", async () => {
+  if (!installPrompt) {
+    return;
+  }
+  const result = await installPrompt.prompt();
+  console.log(`Install prompt was: ${result.outcome}`);
+  disableInAppInstallPrompt();
+});
+
+function disableInAppInstallPrompt() {
+  installPrompt = null;
+  installButton.setAttribute("hidden", "");
+}
+
+window.addEventListener("appinstalled", () => {
+  disableInAppInstallPrompt();
+});
+
+function disableInAppInstallPrompt() {
+  installPrompt = null;
+  installButton.setAttribute("hidden", "");
+}
+
+const relatedApps = await navigator.getInstalledRelatedApps();
+
+// Search for a specific installed platform-specific app
+const psApp = relatedApps.find((app) => app.id === "pgisfat.github.io/pg-media-group-radio/");
+
+if (psApp) {
+  // Update UI as appropriate
+}
+
+
